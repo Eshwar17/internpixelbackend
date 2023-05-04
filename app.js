@@ -17,14 +17,14 @@ app.use(
   })
 );
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL,
-//     Access-Control-Allow-Headers:"Origin, X-Requested-With, Content-Type, Accept",
-//     origin: "*",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
+app.use(cors());
+//   cors({
+//     origin: process.env.FRONTEND_URL,
+// //     Access-Control-Allow-Headers:"Origin, X-Requested-With, Content-Type, Accept",
+// //     origin: "*",
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//   })
 );
 
 // Importing & Using Routes
